@@ -1,0 +1,174 @@
+.home-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+    background-image: url(C:\Users\dilber\Desktop\turkeyvibe\turkeyvibe\image\istockphoto-1015542074-612x612.jpg);
+  background-position: center;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Georgia', serif;
+  animation: bgGlow 10s infinite alternate;
+}
+
+@keyframes bgGlow {
+  0% { filter: brightness(1); }
+  100% { filter: brightness(1.2); }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.home-title {
+  font-size: 4.5em;
+  color: #fff;
+  text-shadow: 0 0 20px #ffca28, 0 0 30px #81d4fa, 0 0 40px #ffab00;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  animation: titleGlow 3s infinite alternate;
+}
+
+@keyframes titleGlow {
+  0% { text-shadow: 0 0 20px #ffca28, 0 0 30px #81d4fa, 0 0 40px #ffab00; }
+  100% { text-shadow: 0 0 30px #ffca28, 0 0 40px #81d4fa, 0 0 50px #ffab00; }
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ffca28, #ffab00, #f57f17);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: buttonGlow 2s infinite alternate;
+}
+
+.cart-button {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #0288d1, #81d4fa, #4fc3f7);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  animation: buttonGlow 2s infinite alternate;
+}
+
+.add-to-cart-button {
+  padding: 8px 16px;
+  background: linear-gradient(45deg, #ffab00, #f57f17, #ffca28);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  animation: buttonGlow 2s infinite alternate;
+}
+
+@keyframes buttonGlow {
+  0% { box-shadow: 0 0 15px #81d4fa, 0 0 25px #0288d1; }
+  100% { box-shadow: 0 0 25px #81d4fa, 0 0 35px #0288d1, 0 0 45px #ffeb3b; }
+}
+
+.logout-button:hover,
+.cart-button:hover,
+.add-to-cart-button:hover {
+  transform: scale(1.05);
+}
+
+.welcome-section {
+  text-align: center;
+ background: linear-gradient(45deg, #f1bf5b, #ee9c54, #f4cc56);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(129, 212, 250, 0.7);
+  max-width: 800px;
+  width: 100%;
+  margin: 20px 0;
+  backdrop-filter: blur(10px);
+  border: 3px solid #81d4fa;
+  animation: formGlow 3.5s infinite alternate;
+}
+
+.weather-info {
+  font-size: 1.1em;
+  color: #0288d1;
+  margin: 10px 0;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.announcements-section,
+.recommendations-section,
+.events-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px 0;
+}
+
+.announcements-section h3,
+.recommendations-section h3,
+.events-section h3 {
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 0 0 10px #ffca28;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.announcement-card,
+.event-card {
+  background: linear-gradient(45deg, #c7e5f3, #c5d8e3, #cdeaee);
+  
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid #81d4fa;
+  animation: cardGlow 3s infinite alternate;
+}
+
+@keyframes cardGlow {
+  0% { box-shadow: 0 0 15px #81d4fa; }
+  100% { box-shadow: 0 0 25px #81d4fa, 0 0 35px #ffca28; }
+}
+
+.announcement-card h4,
+.event-card h4 {
+  font-size: 1.5em;
+  color: #0288d1;
+  margin-bottom: 10px;
+}
+
+.announcement-card p,
+.event-card p {
+  font-size: 1.1em;
+  color: #333;
+}

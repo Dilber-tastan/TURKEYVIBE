@@ -1,0 +1,203 @@
+.cart-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('/image/istockphoto-1015542074-612x612.jpg');
+  background-position: center;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Georgia', serif;
+  animation: bgGlow 10s infinite alternate;
+}
+
+@keyframes bgGlow {
+  0% { filter: brightness(1); }
+  100% { filter: brightness(1.2); }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cart-title {
+  font-size: 4.5em;
+  color: #fff;
+  text-shadow: 0 0 20px #ffca28, 0 0 30px #81d4fa, 0 0 40px #ffab00;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  animation: titleGlow 3s infinite alternate;
+}
+
+@keyframes titleGlow {
+  0% { text-shadow: 0 0 20px #ffca28, 0 0 30px #81d4fa, 0 0 40px #ffab00; }
+  100% { text-shadow: 0 0 30px #ffca28, 0 0 40px #81d4fa, 0 0 50px #ffab00; }
+}
+
+.back-button {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ffca28, #ffab00, #f57f17);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: buttonGlow 2s infinite alternate;
+}
+
+@keyframes buttonGlow {
+  0% { box-shadow: 0 0 15px #81d4fa, 0 0 25px #0288d1; }
+  100% { box-shadow: 0 0 25px #81d4fa, 0 0 35px #0288d1, 0 0 45px #ffeb3b; }
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+}
+
+.cart-section {
+  width: 100%;
+  max-width: 800px;
+  background: linear-gradient(45deg, #f1bf5b, #ee9c54, #f4cc56);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+}
+
+.cart-section h2 {
+  font-size: 2em;
+  color: #000a0f;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #81d4fa;
+  animation: cardGlow 3s infinite alternate;
+}
+
+@keyframes cardGlow {
+  0% { box-shadow: 0 0 15px #81d4fa; }
+  100% { box-shadow: 0 0 25px #81d4fa, 0 0 35px #ffca28; }
+}
+
+.cart-item h4 {
+  font-size: 1.5em;
+  color: #0288d1;
+  margin-bottom: 10px;
+}
+
+.cart-item p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.remove-button {
+  padding: 5px 10px;
+  background: linear-gradient(45deg, #dc3545, #c82333);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  width: fit-content;
+  animation: buttonGlow 2s infinite alternate;
+}
+
+.remove-button:hover {
+  transform: scale(1.05);
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.clear-cart-button, .checkout-button, .add-to-cart-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  animation: buttonGlow 2s infinite alternate;
+}
+
+.clear-cart-button {
+  background: linear-gradient(45deg, #ffc107, #ffca28);
+}
+
+.clear-cart-button:hover {
+  transform: scale(1.05);
+}
+
+.checkout-button {
+  background: linear-gradient(45deg, #28a745, #218838);
+}
+
+.checkout-button:hover {
+  transform: scale(1.05);
+}
+
+.add-to-cart-button {
+  background: linear-gradient(45deg, #ffab00, #f57f17, #ffca28);
+}
+
+.add-to-cart-button:hover {
+  transform: scale(1.05);
+}
+
+.recommendations-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px 0;
+}
+
+.recommendations-section h3 {
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 0 0 10px #ffca28;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border: 2px solid #81d4fa;
+  animation: cardGlow 3s infinite alternate;
+}
+
+.event-card h4 {
+  font-size: 1.5em;
+  color: #0288d1;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  font-size: 1.1em;
+  color: #333;
+}
